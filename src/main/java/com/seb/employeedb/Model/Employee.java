@@ -17,7 +17,7 @@ public class Employee {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="department_id")
     @JsonIgnore
-    private com.seb.employeedb.Model.Department department;
+    private Department department;
 
     public long getEmpId() {
         return empId;
